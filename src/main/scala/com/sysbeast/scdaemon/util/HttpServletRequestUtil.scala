@@ -1,4 +1,4 @@
-package com.sysbeast.daemon.util
+package com.sysbeast.scdaemon.util
 
 import javax.servlet.http.HttpServletRequest
 import org.eclipse.jetty.util.StringUtil

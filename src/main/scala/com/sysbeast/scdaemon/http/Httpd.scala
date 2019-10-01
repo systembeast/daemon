@@ -1,4 +1,4 @@
-package com.sysbeast.daemon.http
+package com.sysbeast.scdaemon.http
 
 import java.io.File
 
