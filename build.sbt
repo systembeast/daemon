@@ -1,4 +1,4 @@
-name := "daemon"
+name := "scdaemon"
 version := "0.1"
 scalaVersion := "2.13.1"
 libraryDependencies += "org.eclipse.jetty" % "jetty-server" % "9.4.20.v20190813"
