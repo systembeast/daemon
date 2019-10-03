@@ -42,6 +42,13 @@ class Httpd(www: File) {
             println("adding servlet " + c)
             sch.addServlet(c, "/" + c.getSimpleName)
         }
+        ClassUtil.findClasses(classOf[Any],  new File(this.getClass.getProtectionDomain.getCodeSource().getLocation().getFile))
+          .filter(c=>c.isAnnotationPresent(classOf[ServerEndpoint]) && c.isAnnotationPresent(classOf[ClientEndpoint]))
+          .foreach {
+            c =>
+              println("adding websocket " + c)
+              wscontainer.addEndpoint(c)
+          }
     }
 
 
@@ -65,13 +72,7 @@ class Httpd(www: File) {
       n =>
         println(n, srv.getAttribute(n)  )
     }
-    ClassUtil.findClasses(classOf[Any],  new File(this.getClass.getProtectionDomain.getCodeSource().getLocation().getFile))
-      .filter(c=>c.isAnnotationPresent(classOf[ServerEndpoint]) && c.isAnnotationPresent(classOf[ClientEndpoint]))
-      .foreach {
-        c =>
-          println("adding websocket " + c)
-          wscontainer.addEndpoint(c)
-      }
+
     println("starting...")
     srv.start
     srv.join

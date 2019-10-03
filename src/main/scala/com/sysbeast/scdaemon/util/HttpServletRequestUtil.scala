@@ -24,6 +24,5 @@ object HttpServletRequestUtil {
     }
     def readBodyJsonObject: JSONObject = new JSONObject(readBodyText)
     def readBodyJsonArray: JSONArray = new JSONArray(readBodyText)
-
   }
 }
