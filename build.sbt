@@ -1,6 +1,7 @@
 name := "scdaemon"
 version := "0.2"
 scalaVersion := "2.13.1"
+libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "1.2.0"
 libraryDependencies += "org.eclipse.jetty" % "jetty-server" % "9.4.20.v20190813"
 libraryDependencies += "org.eclipse.jetty" % "jetty-servlet" % "9.4.20.v20190813"
 libraryDependencies += "org.eclipse.jetty" % "jetty-util" % "9.4.20.v20190813"
