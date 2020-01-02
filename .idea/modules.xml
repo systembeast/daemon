@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scdaemon.iml" filepath="$PROJECT_DIR$/.idea/modules/scdaemon.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scdaemon-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scdaemon-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scdaemon-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scdaemon-build.iml" group="sbt-build-modules" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scutil.iml" filepath="$PROJECT_DIR$/.idea/modules/scutil.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scutil-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scutil-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scutil-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scutil-build.iml" group="sbt-build-modules" />
     </modules>
   </component>
 </project>
